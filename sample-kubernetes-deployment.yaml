@@ -1,0 +1,25 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: dynu
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dynu
+  template:
+    metadata:
+      name: dynu
+      labels:
+        app: dynu
+    spec:
+      containers:
+      - name: dynu
+        image:  ghcr.io/rbaghbanli/dynu
+        env:
+        - name: USERNAME
+          value: DYNU_USERNAME
+        - name: PASSWORD
+          value: DYNU_PASSWORD
+        - name: INTERVAL
+          value: INTERVAL_IN_SECONDS

@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+
+  dynu:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: dynu
+    environment:
+      - USERNAME=DYNU_USERNAME
+      - PASSWORD=DYNU_PASSWORD
+      - INTERVAL=INTERVAL_IN_SECONDS
