@@ -7,7 +7,7 @@ Sample files for deployments
 * sample-kubernetes-deployment.yaml
 
 ### Environment variables
-* DYNU_USERNAME - Replace with DYNU login username.
-* DYNU_PASSWORD - Replace with DYNU login password.
-* DYNU_HOSTNAME - Replace with DYNU domain name to update. In case of multiple domains use comma separated list without any spaces.
-* LOOP_INTERVAL - Replace with loop interval value in seconds. Value format: NUMBER[SUFFIX] as per UNIX sleep command.
+* DYNU_USERNAME - Replace with Dynu login username.
+* DYNU_PASSWORD - Replace with Dynu login password.
+* DYNU_HOSTNAME - Replace with domain name to update. Use comma separated list without spaces for multiple domains.
+* LOOP_INTERVAL - Optional. Replace with loop interval value in seconds. Value format is NUMBER[SUFFIX] as per UNIX sleep command format. Defaults to 600 (10 minutes).
