@@ -21,5 +21,7 @@ spec:
           value: DYNU_USERNAME
         - name: PASSWORD
           value: DYNU_PASSWORD
+        - name: HOSTNAME
+          value: COMMA_SEPARATED_LIST_OF_DOMAINS
         - name: INTERVAL
-          value: INTERVAL_IN_SECONDS
+          value: UPDATE_INTERVAL_IN_SECONDS
